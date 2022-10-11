@@ -1,13 +1,9 @@
-import React, { useState } from "react";
 import Logo from "../assets/logo.svg";
 import HomeImg from "../assets/home-image.svg";
 import styles from "../styles/HomePage.module.scss";
+import UsersPage from "./UsersPage";
 
 const Homepage = () => {
-  const name = "Eddy";
-
-  const [identity, setIdentity] = useState<string>("");
-
   return (
     <div className={styles.mainContainer}>
       {/* left-div */}
@@ -45,6 +41,7 @@ const Homepage = () => {
           <input className={styles.submit} type="submit" value="LOG IN" />
         </form>
       </div>
+      <UsersPage />
     </div>
   );
 };

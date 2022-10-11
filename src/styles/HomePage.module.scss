@@ -1,124 +1,126 @@
 @use "./variables/_colors.scss" as colors;
+@use "./variables/_fonts.scss" as fonts;
 
 .mainContainer {
-  height: 80vh;
-  width: 80vW;
+  height: 65vh;
+  width: 80vw;
   display: flex;
   padding: 10%;
   justify-content: space-around;
   align-items: center;
-}
+  margin: 0 auto;
 
-.leftDiv {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  padding: 40px;
-//   background-color: green;
-  flex-basis: 50%;
-}
+  .leftDiv {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    //   background-color: green;
+    flex-basis: 50%;
 
-.rightDiv {
-  height: 80%;
-//   background-color: blue;
-  //   padding: 170px 80px 100px 50px;
-  padding: 15% 5% 5% 6%; 
-  flex-basis: 50%;
-}
+    .img1 {
+      width: 200px;
+      height: 80px;
+      margin-bottom: 25%;
+    }
 
-.img1 {
-  width: 200px;
-  height: 80px;
-  margin-bottom: 25%;
-}
-
-.img2 {
-  width: 100%;
-  height: 60%;
-}
-
-.rightDivTop {
-  margin-bottom: 10%;
-}
-.form {
-//   background-color: yellow;
-  height: 50%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 20px 10px 0px;
-  justify-content: space-around;
-}
-
-.h1 {
-  font-size: 45px;
-  margin: 30px 0px;
-  color: colors.$main-fontColor;
-}
-
-.subFont {
-    color: colors.$sub-fontColor;
-    font-size: 1.2rem;
-}
-
-.inputDiv {
-  width: 100%;
-  margin-bottom: 5px;
-}
-
-.input {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 15px 0;
-  border: 1px solid colors.$main-input-color;
-  box-sizing: border-box;
-  border-radius: 4px;
-  &::placeholder {
-    color: colors.$sub-fontColorOpacity;
+    .img2 {
+      width: 100%;
+      height: 60%;
+    }
   }
 
-  &_2 {
-    margin-bottom: 8px;
-    border: 1px solid colors.$main-input-color;
-    width: 100%;
-    padding: 12px 20px;
-    box-sizing: border-box;
-    border-radius: 4px;
-    &::placeholder {
-        color: colors.$sub-fontColorOpacity;
+  .rightDiv {
+    height: 80%;
+    //   background-color: blue;
+    //   padding: 170px 80px 100px 50px;
+    padding: 15% 5% 5% 6%;
+    flex-basis: 50%;
+
+    .rightDivTop {
+      margin-top: 10%;
+      margin-bottom: 10%;
+    }
+    .form {
+      //   background-color: yellow;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px 10px 0px;
+      justify-content: space-around;
+      .inputDiv {
+        width: 100%;
+        margin-bottom: 5px;
       }
+
+      .input {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 15px 0;
+        border: 1px solid colors.$main-input-color;
+        box-sizing: border-box;
+        border-radius: 4px;
+        &::placeholder {
+          color: colors.$sub-fontColorOpacity;
+        }
+
+        &_2 {
+          margin-bottom: 8px;
+          border: 1px solid colors.$main-input-color;
+          width: 100%;
+          padding: 12px 20px;
+          box-sizing: border-box;
+          border-radius: 4px;
+          &::placeholder {
+            color: colors.$sub-fontColorOpacity;
+          }
+        }
+      }
+
+      .forgotPassword {
+        margin-top: 10px;
+        margin-bottom: 15px;
+        font-size: 12px;
+        letter-spacing: 0.2rem;
+        color: colors.$accent-color;
+        cursor: pointer;
+        &:hover {
+          color: colors.$hover-color;
+        }
+      }
+
+      .submit {
+        width: 100%;
+        letter-spacing: 0.1em;
+        background-color: colors.$accent-color;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: colors.$hover-color;
+        }
+      }
+
+      .inputContainer > a {
+        margin-top: 20px;
+      }
+    }
+
+    .h1 {
+      font-size: 45px;
+      font-weight: bold;
+      margin: 30px 0px;
+      color: colors.$main-fontColor;
+    }
+
+    .subFont {
+      color: colors.$sub-fontColor;
+      font-size: 1.2rem;
+    }
   }
-}
-
-.forgotPassword {
-  margin-top: 10px;
-  margin-bottom: 15px;
-  font-size: 12px;
-  letter-spacing: 0.2rem;
-  color: colors.$accent-color;
-  cursor: pointer;
-  &:hover {
-    color: colors.$hover-color;
-  }
-}
-
-.submit {
-  width: 100%;
-  letter-spacing: 0.1em;
-  background-color: colors.$accent-color;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  &:hover {
-    background-color: colors.$hover-color;
-  }
-}
-
-
-.inputContainer > a {
-    margin-top: 20px;
 }
 
 // .inputContainer {
