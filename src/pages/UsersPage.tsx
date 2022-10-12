@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
+import { fetchUsers } from '../utils/api';
 import { db } from "../db/db";
 import { useLiveQuery } from "dexie-react-hooks";
+import SideBar from "../components/SideBar";
+import styles from "../styles/UsersPage.module.scss";
 
 db.fetchedusers.toArray();
 
@@ -26,23 +29,9 @@ const UsersPage = () => {
 
   const allusers = useLiveQuery(() => fetchedusers.toArray(), []);
   return (
-    <div style={{ width: "300px", height: "300px", overflow: "scroll" }}>
-      {allusers?.map((user) => (
-        <div>
-          <ul
-            key={user.id}
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              justifyContent: "center",
-              alignItems: "center",
-              listStyle: "none",
-            }}
-          >
-            <li>{user.userName}</li>
-          </ul>
-        </div>
-      ))}
+    <div className={styles.mainContainer}>
+     
+      <SideBar />
     </div>
   );
 };

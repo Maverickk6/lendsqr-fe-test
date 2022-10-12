@@ -61,12 +61,15 @@ export interface FetchedUsers extends Profile, Guarantor, Socials, Education {
 export class Users extends Dexie {
   localusers!: Table<LocalUsers>;
   fetchedusers!: Table<FetchedUsers>;
+  fetcheduser!: Table<FetchedUsers>;
 
   constructor() {
     super("usersDatabase");
     this.version(1).stores({
       localusers: "++id, email, password",
       fetchedusers:
+        "createdAt, orgName, userName, email, phoneNumber, lastActiveDate, *profile, *guarantor, accountBalance, accountNumber, *socials, *education, id",
+      fetcheduser:
         "createdAt, orgName, userName, email, phoneNumber, lastActiveDate, *profile, *guarantor, accountBalance, accountNumber, *socials, *education, id",
     });
   }
