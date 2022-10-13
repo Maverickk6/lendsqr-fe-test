@@ -5,24 +5,30 @@ import np_users2 from "../assets/np_users2.svg";
 import Briefcase from "../assets/icons/briefcase1.svg";
 import DownArrow from "../assets/icons/next.svg";
 import Home from "../assets/icons/home1.svg";
-import UserFriends from "../assets/icons/user-friends1.svg"
+import UserFriends from "../assets/icons/user-friends1.svg";
 import Users from "../assets/icons/users1.svg";
-import Sack from "../assets/icons/sack1.svg"
-import Decision from "../assets/icons/handshake-regular1.svg"
-import Savings from '../assets/icons/piggy-bank1.svg'
-import LoanRequest from "../assets/icons/Group104.svg"
-import Whitelist from '../assets/icons/user-check1.svg'
-import Karma from '../assets/icons/user-times1.svg'
-import SavingsProd from '../assets/icons/bank_1.svg'
-import Fees from '../assets/icons/coins-solid1.svg';
-import Transactions from '../assets/icons/icon.svg';
-import Services from '../assets/icons/galaxy1.svg';
-import ServiceAcc from '../assets/icons/user-cog1.svg';
-import Settlements from '../assets/icons/scroll1.svg';
-import Charts from '../assets/icons/chart-bar2.svg';
-import Prefs from '../assets/icons/sliders-h1.svg'
-import Pricing from '../assets/icons/badge-percent1.svg';
-import Audit from '../assets/icons/clipboard-list1.svg'
+import Sack from "../assets/icons/sack1.svg";
+import Decision from "../assets/icons/handshake-regular1.svg";
+import Savings from "../assets/icons/piggy-bank1.svg";
+import LoanRequest from "../assets/icons/Group104.svg";
+import Whitelist from "../assets/icons/user-check1.svg";
+import Karma from "../assets/icons/user-times1.svg";
+import SavingsProd from "../assets/icons/bank_1.svg";
+import Fees from "../assets/icons/coins-solid1.svg";
+import Transactions from "../assets/icons/icon.svg";
+import Services from "../assets/icons/galaxy1.svg";
+import ServiceAcc from "../assets/icons/user-cog1.svg";
+import Settlements from "../assets/icons/scroll1.svg";
+import Charts from "../assets/icons/chart-bar2.svg";
+import Prefs from "../assets/icons/sliders-h1.svg";
+import Pricing from "../assets/icons/badge-percent1.svg";
+import Audit from "../assets/icons/clipboard-list1.svg";
+import Logo from "../assets/logo.svg";
+import UserImg from "../assets/userImg/image-4.svg";
+import Bell from "../assets/userImg/bell-icon.svg";
+import Bell2 from "../assets/userImg/bell-icon2.png";
+import Dropdown from "../assets/icons/dropdown.svg";
+import Search from "../assets/userImg/Search.svg";
 
 export default {
   uloanicon,
@@ -37,7 +43,7 @@ export default {
   Sack,
   Decision,
   Savings,
-  LoanRequest, 
+  LoanRequest,
   Whitelist,
   Karma,
   SavingsProd,
@@ -49,5 +55,11 @@ export default {
   Charts,
   Prefs,
   Pricing,
-  Audit
+  Audit,
+  Logo,
+  UserImg,
+  Bell,
+  Bell2,
+  Dropdown,
+  Search,
 };

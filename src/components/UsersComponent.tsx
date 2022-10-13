@@ -40,8 +40,8 @@ export const CardComponent = ({
           src={imgUrl}
         />
       </div>
-      <p style={{ fontSize: "12px" }}>{text}</p>
-      <p>{amount}</p>
+      <p className={styles.ptext}>{text}</p>
+      <p className={styles.pptext}>{amount}</p>
     </div>
   );
 };

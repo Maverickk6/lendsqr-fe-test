@@ -1,19 +1,28 @@
 import styles from "../styles/Header.module.scss";
-import Logo from "../assets/logo.svg";
+import { assets } from "../constants";
 
 const Header = () => {
   return (
     <header className={styles.mainContainer}>
       <div>
-        <img src={Logo} alt="logo" />
+        <img src={assets.Logo} alt="logo" />
       </div>
-      <div>
-        <p>Search Input</p>
+      <div className={styles.inputDiv}>
+        <input type="text" placeholder="Search For Anything" />
+        <div className={styles.inputContainer}>
+          <img src={assets.Search} />
+        </div>
       </div>
       <div className={styles.div3}>
-        <p>avatar</p>
-        <p>avatar</p>
-        <p>avatar</p>
+        <a>Docs</a>
+        <img src={assets.Bell} />
+        <div className={styles.profileName}>
+          <img src={assets.UserImg} />
+          <div className={styles.dropdown}>
+            <p>Adedeji</p>
+            <img src={assets.Dropdown} />
+          </div>
+        </div>
       </div>
     </header>
   );
