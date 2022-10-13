@@ -1,9 +1,11 @@
 import { useState, useEffect } from "react";
-import { fetchUsers } from '../utils/api';
+import { fetchUsers } from "../utils/api";
 import { db } from "../db/db";
 import { useLiveQuery } from "dexie-react-hooks";
 import SideBar from "../components/SideBar";
 import styles from "../styles/UsersPage.module.scss";
+import Header from "../components/Header";
+import UsersComponent from '../components/UsersComponent';
 
 db.fetchedusers.toArray();
 
@@ -30,8 +32,11 @@ const UsersPage = () => {
   const allusers = useLiveQuery(() => fetchedusers.toArray(), []);
   return (
     <div className={styles.mainContainer}>
-     
-      <SideBar />
+      <Header />
+      <div className={styles.body}>
+        <SideBar />
+        <UsersComponent />
+      </div>
     </div>
   );
 };

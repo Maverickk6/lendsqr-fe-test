@@ -1,0 +1,23 @@
+.userscard {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 10px;
+    align-items: flex-start;
+}
+
+.card {
+    padding: 15px ;
+    // margin-left: 10px;
+    margin-right: 2%;
+    background-color: #eee;
+    height: 150px;
+    width: 170px;
+    border-radius: 10px;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: red;
+}
