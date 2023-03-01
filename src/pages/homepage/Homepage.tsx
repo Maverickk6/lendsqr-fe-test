@@ -1,9 +1,15 @@
-import Logo from "../assets/logo.svg";
-import HomeImg from "../assets/home-image.svg";
-import styles from "../styles/HomePage.module.scss";
-import UsersPage from "./UsersPage";
+import Logo from "../../assets/logo.svg";
+import HomeImg from "../../assets/home-image.svg";
+import styles from "./HomePage.module.scss";
+import UsersPage from "../userspage/UsersPage";
+import { useNavigate } from "react-router-dom";
 
 const Homepage = () => {
+  const navigate = useNavigate();
+
+  const submit = () => {
+    navigate("/users");
+  };
   return (
     <div className={styles.mainContainer}>
       {/* left-div */}
@@ -38,7 +44,12 @@ const Homepage = () => {
             <a className={styles.forgotPassword}>FORGOT PASSWORD?</a>
           </div>
 
-          <input className={styles.submit} type="submit" value="LOG IN" />
+          <input
+            className={styles.submit}
+            type="submit"
+            value="LOG IN"
+            onClick={submit}
+          />
         </form>
       </div>
       {/* <UsersPage /> */}

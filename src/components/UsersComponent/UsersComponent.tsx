@@ -1,7 +1,7 @@
 import React from "react";
-import styles from "../styles/UsersComp.module.scss";
+import styles from "./UsersComp.module.scss";
 import UsersLoan from "../assets/UsersLoan.svg";
-import { assets } from "../constants";
+import { assets } from "../../constants";
 
 interface UsersCard {
   imgUrl: string;
@@ -34,14 +34,14 @@ export const CardComponent = ({
       >
         <img
           style={{
-            padding: "4px",
+            padding: "0.7rem",
             color: color,
           }}
           src={imgUrl}
         />
       </div>
       <p className={styles.ptext}>{text}</p>
-      <p className={styles.pptext}>{amount}</p>
+      <p className={styles.p2text}>{amount}</p>
     </div>
   );
 };
@@ -68,14 +68,14 @@ const UsersComponent = () => {
         <CardComponent
           imgUrl={assets.uloanicon}
           text="USERS WITH LOANS"
-          amount="2,453"
+          amount="12,453"
           color="rgba(245, 95, 68, 1)"
           rgbColor="rgba(245, 95, 68, 0.15)"
         />
         <CardComponent
           imgUrl={assets.moneyicon}
           text="USERS WITH SAVINGS"
-          amount="2,453"
+          amount="102,453"
           color="rgba(255, 51, 102, 1)"
           rgbColor="rgba(255, 51, 102, 0.15)"
         />

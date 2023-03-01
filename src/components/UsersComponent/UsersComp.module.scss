@@ -1,0 +1,44 @@
+@use "../../styles/variables/_colors.scss" as colors;
+@use "../../styles/variables/_fonts.scss" as fonts;
+
+.userscard {
+ 
+  padding-left: 2rem;
+  padding-top: 2rem;
+  & > p {
+    font-size: 2rem;
+    padding: 0.4rem 0px;
+    margin: 0.8rem 0px 2.5rem 0px;
+    color: colors.$main-fontColor;
+    font-family: fonts.$font-worksans-400;
+  }
+  .cards {
+    display: flex;
+    justify-content: space-between;
+    // width: 70%;
+  }
+}
+
+.card {
+  padding: 1rem;
+  // margin-left: 10px;
+  margin-right: 20px;
+  background-color: white;
+  // height: 120px;
+  width: 11rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: fonts.$font-worksans-400;
+  .ptext {
+    color: colors.$main-fontColor;
+    font-size: 11px;
+    margin: 0.5rem 0px;
+  }
+  .p2text {
+    font-size: 22px;
+    color: colors.$main-fontColor;
+    font-weight: 600;
+  }
+}

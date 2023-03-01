@@ -1,9 +1,9 @@
 import { useState } from "react";
-import styles from "./App.scss";
-import Homepage from "./pages/Homepage";
+import "./App.scss";
+import Homepage from "./pages/homepage/Homepage";
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Homepage />
     </div>
   );

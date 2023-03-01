@@ -1,5 +1,5 @@
-import styles from "../styles/Header.module.scss";
-import { assets } from "../constants";
+import styles from "./Header.module.scss";
+import { assets } from "../../constants";
 
 const Header = () => {
   return (

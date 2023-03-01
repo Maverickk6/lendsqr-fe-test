@@ -1,10 +1,10 @@
 import React from "react";
-import styles from "../styles/SideBar.module.scss";
-import { assets } from "../constants";
+import styles from "./SideBar.module.scss";
+import { assets } from "../../constants";
 
 const SideBar = () => {
   return (
-    <div className={styles.mainContainer}>
+    <div className={styles.mainContainer2}>
       <div className={styles.top}>
         <img src={assets.Briefcase} />
         <div className={styles.topdiv}>

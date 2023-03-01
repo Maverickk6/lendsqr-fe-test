@@ -1,14 +1,18 @@
-@use "./variables/_colors.scss" as colors;
-@use "./variables/_fonts.scss" as fonts;
+@use "../../styles/variables/_colors.scss" as colors;
+@use "../../styles/variables/_fonts.scss" as fonts;
 
-.mainContainer {
-  width: 19%;
-  height: 100%;
+.mainContainer2 {
+  margin-right: 0.5rem;
+  width: 16rem;
+  // flex: 1;
+  // height: 100%;
   background-color: white;
   padding-top: 20px;
-  padding-left: 20px;
+  padding-left: 0.8rem;
+  padding-right: 0.4rem;
   font-family: fonts.$font-worksans-400;
-  & a, img {
+  & a,
+  img {
     color: colors.$main-fontColorOpacity;
     &:hover {
       color: colors.$main-fontColor;
@@ -17,7 +21,7 @@
   }
   .top {
     // background-color: rebeccapurple;
-    height: 50px;
+    height: 3.5rem;
     padding: 0px 10px;
     display: flex;
     // justify-content: space-between;
@@ -35,12 +39,10 @@
         margin-left: 7px;
       }
       & > p {
-        font-size: 16px;
+        font-size: 1rem;
         color: colors.$main-fontColor;
       }
-      
     }
-   
   }
   .section2 {
     height: 100%;
@@ -60,8 +62,11 @@
         padding: 0;
         & > li {
           list-style: none;
-          padding: 5px 0px;
+          padding: 10px 0px;
           margin: 4px 0px;
+          &:hover {
+            background-color: rgb(197, 206, 244);
+          }
           & > img {
             margin-right: 10px;
           }
