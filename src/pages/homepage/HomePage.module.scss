@@ -3,10 +3,10 @@
 
 .mainContainer {
   height: 65vh;
-  width: 80vw;
+  // width: 80vw;
   display: flex;
-  padding: 10%;
-  justify-content: space-around;
+  // padding: 10%;
+  // justify-content: space-around;
   align-items: center;
   margin: 0 auto;
 
@@ -26,7 +26,7 @@
 
     .img2 {
       width: 100%;
-      height: 60%;
+      height: 100%;
     }
   }
 
@@ -38,8 +38,8 @@
     flex-basis: 50%;
 
     .rightDivTop {
-      margin-top: 10%;
-      margin-bottom: 10%;
+      margin-top: 1rem;
+      margin-bottom: 7rem;
     }
     .form {
       //   background-color: yellow;
@@ -112,13 +112,14 @@
     .h1 {
       font-size: 45px;
       font-weight: bold;
-      margin: 30px 0px;
+      margin: 30px 0px 0px 0px;
       color: colors.$main-fontColor;
     }
 
     .subFont {
       color: colors.$sub-fontColor;
       font-size: 1.2rem;
+      margin-bottom: 2rem;
     }
   }
 }
